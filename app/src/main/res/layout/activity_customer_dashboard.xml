@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F8F1E8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="20dp"
+            android:background="#592A0E">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PressPilot"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                android:textColor="#FFF8ED"
+                android:letterSpacing="0.02" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="NEWSPAPER DELIVERY MANAGEMENT"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:textColor="#E5B585"
+                android:letterSpacing="0.12" />
+
+            <View
+                android:layout_width="45dp"
+                android:layout_height="3dp"
+                android:layout_marginTop="15dp"
+                android:background="#E5B585" />
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="Monday, 08 September 2026"
+                android:textSize="14sp"
+                android:textColor="#FFF8ED" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quick Access"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#592A0E" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Manage your newspaper services"
+                android:textSize="13sp"
+                android:textColor="#795548" />
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/btnTodayDelivery"
+                android:layout_width="match_parent"
+                android:layout_height="92dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp"
+                app:strokeColor="#E6D8C9"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+
+                    <View
+                        android:layout_width="6dp"
+                        android:layout_height="match_parent"
+                        android:background="#592A0E" />
+
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="15dp"
+                        android:gravity="center"
+                        android:text="N"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:textColor="#592A0E"
+                        android:background="#F3E4D2" />
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="15dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Today's Delivery"
+                            android:textSize="17sp"
+                            android:textStyle="bold"
+                            android:textColor="#3E1D0A" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Check today's newspaper status"
+                            android:textSize="12sp"
+                            android:textColor="#795548" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginEnd="10dp"
+                        android:text="›"
+                        android:textSize="30sp"
+                        android:textColor="#592A0E" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/btnMonthlyBill"
+                android:layout_width="match_parent"
+                android:layout_height="92dp"
+                android:layout_marginTop="13dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp"
+                app:strokeColor="#E6D8C9"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <View
+                        android:layout_width="6dp"
+                        android:layout_height="match_parent"
+                        android:background="#B9783F" />
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="15dp"
+                        android:gravity="center"
+                        android:text="₹"
+                        android:textSize="23sp"
+                        android:textStyle="bold"
+                        android:textColor="#592A0E"
+                        android:background="#F3E4D2" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="15dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Monthly Bill"
+                            android:textSize="17sp"
+                            android:textStyle="bold"
+                            android:textColor="#3E1D0A" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="View your monthly payment"
+                            android:textSize="12sp"
+                            android:textColor="#795548" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginEnd="10dp"
+                        android:text="›"
+                        android:textSize="30sp"
+                        android:textColor="#592A0E" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/btnProfile"
+                android:layout_width="match_parent"
+                android:layout_height="92dp"
+                android:layout_marginTop="13dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp"
+                app:strokeColor="#E6D8C9"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <View
+                        android:layout_width="6dp"
+                        android:layout_height="match_parent"
+                        android:background="#8C5A3C" />
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="15dp"
+                        android:gravity="center"
+                        android:text="P"
+                        android:textSize="21sp"
+                        android:textStyle="bold"
+                        android:textColor="#592A0E"
+                        android:background="#F3E4D2" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="15dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="My Profile"
+                            android:textSize="17sp"
+                            android:textStyle="bold"
+                            android:textColor="#3E1D0A" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Manage your account"
+                            android:textSize="12sp"
+                            android:textColor="#795548" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginEnd="10dp"
+                        android:text="›"
+                        android:textSize="30sp"
+                        android:textColor="#592A0E" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/btnLogout"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardBackgroundColor="#FFFDFC"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="2dp"
+                app:strokeColor="#D7BFA8"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:gravity="center"
+                        android:text="↪"
+                        android:textSize="23sp"
+                        android:textStyle="bold"
+                        android:textColor="#713030"
+                        android:background="#F6E9E1" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="15dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Logout"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="#713030" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text="Sign out of PressPilot"
+                            android:textSize="11sp"
+                            android:textColor="#8D6E63" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="›"
+                        android:textSize="28sp"
+                        android:textColor="#713030" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

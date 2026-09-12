@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F8F1E8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="20dp"
+            android:background="#592A0E">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PressPilot"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:textColor="#FFF8ED"
+                android:letterSpacing="0.02" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="MONTHLY BILL"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#E5B585"
+                android:letterSpacing="0.12" />
+
+            <View
+                android:layout_width="45dp"
+                android:layout_height="3dp"
+                android:layout_marginTop="14dp"
+                android:background="#E5B585" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="18dp"
+                app:cardElevation="5dp"
+                app:strokeColor="#E6D8C9"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="22dp">
+
+                    <TextView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:text="₹"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:background="#B9783F" />
+
+                    <TextView
+                        android:id="@+id/tvBillTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="12dp"
+                        android:text="Monthly Bill"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:textColor="#592A0E" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="#E6D8C9" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CUSTOMER"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:textColor="#8C5A3C"
+                        android:letterSpacing="0.08" />
+
+                    <TextView
+                        android:id="@+id/tvCustomerName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Customer Name"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#3E1D0A" />
+
+                    <TextView
+                        android:id="@+id/tvMonth"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="Month: September 2026"
+                        android:textSize="16sp"
+                        android:textColor="#3E1D0A" />
+
+                    <TextView
+                        android:id="@+id/tvDeliveredDays"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="Delivered Days: 0"
+                        android:textSize="16sp"
+                        android:textColor="#3E1D0A" />
+
+                    <TextView
+                        android:id="@+id/tvPricePerDay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="Price per Day: ₹0.00"
+                        android:textSize="16sp"
+                        android:textColor="#3E1D0A" />
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="22dp"
+                        app:cardBackgroundColor="#FFF4E5"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="0dp"
+                        app:strokeColor="#E5B585"
+                        app:strokeWidth="1dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="TOTAL AMOUNT"
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                android:textColor="#8C5A3C"
+                                android:letterSpacing="0.08" />
+
+                            <TextView
+                                android:id="@+id/tvTotalAmount"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:text="₹0.00"
+                                android:textSize="28sp"
+                                android:textStyle="bold"
+                                android:textColor="#592A0E" />
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/tvNoBill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="No bill generated"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#8C5A3C"
+                android:gravity="center"
+                android:visibility="gone" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:indeterminateTint="#592A0E"
+                android:visibility="gone" />
+>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="22dp"
+                android:layout_marginBottom="20dp"
+                android:text="PressPilot • Newspaper Delivery Management"
+                android:textSize="12sp"
+                android:textColor="#795548" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:label="PressPilot"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PressPilot">
+
+        <!-- Admin Dashboard -->
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".CustomerListActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".BillingActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ReportsActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".AddCustomer"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".DeliveryActivity"
+            android:exported="false" />
+
+        <!-- Customer Dashboard -->
+        <activity
+            android:name=".CustomerDashboardActivity"
+            android:exported="false" />
+
+        <!-- Authentication -->
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+
+        <!-- Customer Modules -->
+        <activity
+            android:name=".CustomerDeliveryActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".CustomerBillActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".CustomerProfileActivity"
+            android:exported="false" />
+
+        <!-- Main Activity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+    </application>
+
+</manifest>
