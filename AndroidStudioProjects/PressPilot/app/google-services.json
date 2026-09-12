@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "824447199970",
+    "project_id": "presspilot-ac6e0",
+    "storage_bucket": "presspilot-ac6e0.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:824447199970:android:b344bf9babc10dfe688cbb",
+        "android_client_info": {
+          "package_name": "com.example.presspilot"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKXTiPDPfmKGesa5eE858U91OV8LeFvh4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
